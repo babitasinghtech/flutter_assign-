@@ -1,0 +1,49 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Must be applied after Android and Kotlin plugins
+    id "com.google.gms.google-services"
+} 
+
+
+android {
+    namespace = "com.example.travelapp"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.travelapp"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // Use debug signing config for now; replace with release signing config before production
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+   implementation platform("com.google.firebase:firebase-bom:33.8.0")
+    implementation platform("com.google.firebase:firebase-bom:33.8.0")
+
+    // Firebase Analytics
+    implementation "com.google.firebase:firebase-analytics"
+}
