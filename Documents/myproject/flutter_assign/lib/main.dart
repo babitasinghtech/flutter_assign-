@@ -80,11 +80,11 @@ class _HomePageState extends State<HomePage> {
                         posts[index]['title'],
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      subtitle: Text(posts[index]['body']),
-                    ),
-                  );
-                },
-              ),
+                   subtitle: Text(posts[index]['body']),
+                ),
+            );
+        },
+      ),
     );
   }
 }
