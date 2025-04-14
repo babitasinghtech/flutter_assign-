@@ -43,3 +43,59 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+# Flutter/Dart related
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+.idea/
+*.iml
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# macOS files
+.DS_Store
+
+# Android related
+android/.gradle/
+android/app/key.jks
+android/key.properties
+*.keystore
+*.jks
+*.pub
+
+# iOS related
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/.flutter-plugins
+ios/.flutter-plugins-dependencies
+
+# Emulator and debug stuff
+*.log
+*.lock
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+*.rej
+*.swo
+*.swn
+*.swn
+
+# AVD & emulator data
+*.qcow2
+*.ini
+*.img
+android/avd/
